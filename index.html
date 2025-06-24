@@ -302,12 +302,23 @@
 
   <section id="contact">
     <h2>Contact</h2>
-    <form onsubmit="event.preventDefault(); alert('Message envoyé !');">
-      <input type="text" placeholder="Votre nom" required>
-      <input type="email" placeholder="Votre email" required>
-      <textarea rows="5" placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
+    <form
+    action="https://formspree.io/f/mwpbrgov"
+    method="POST"
+    >
+    <label>
+        Your email:
+        <input type="email" name="email">
+    </label>
+    <label>
+        Your message:
+        <textarea name="message"></textarea>
+    </label>
+    <!-- your other form fields go here -->
+    <button type="submit">Send</button>
     </form>
+
+
   </section>
 
   <footer>
